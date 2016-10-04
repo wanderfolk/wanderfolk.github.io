@@ -1,7 +1,112 @@
-html { 
-  background: url(../images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a, a:hover,
+a:visited, a:active{
+	color: #FFF;
+}
+
+header {
+	background-repeat: no-repeat;
+	background-position: center center; 
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;   
+}
+
+header:before{
+    zoom: 1;
+    filter: alpha(opacity=60);
+    -webkit-opacity: 0.6;
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+    -webkit-transition: opacity 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: opacity 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: opacity 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: opacity 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0008FF', endColorstr='#df2829', GradientType=1);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(134deg, #0008FF, #3a7bd5, #4ca1af, #43cea2, #5f2c82, #df2829);
+	background-size: 800% 800%;
+
+	-webkit-animation: bg-change 40s ease infinite;
+	-moz-animation: bg-change 40s ease infinite;
+	animation: bg-change 40s ease infinite;
+}
+
+
+@-webkit-keyframes bg-change {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@-moz-keyframes bg-change {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@keyframes bg-change { 
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+
+.logo{
+	height: 100vh;
+	width: 100vw;
+	z-index: 1;
+	opacity: .95;
+}
+
+img{
+	top: 36%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+}
+
+h2{
+	top: 53%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 100;
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+	position: absolute;
+	bottom: 10%;
+	transform: translate(-50%, 0%);
+    left: 50%;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 100;
+}
+
+footer p{
+	margin: 10px auto;
+}
+.pipe{
+	height:32px;
+	width:2px;
+	background: #FFF;
+	margin: -4px 7px;
+	display: inline-block;
 }
