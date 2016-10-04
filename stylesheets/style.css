@@ -36,7 +36,7 @@ header:before{
     position: absolute;
     right: 0;
     top: 0;
-    background: linear-gradient(134deg, #0008FF, #3a7bd5, #4ca1af, #43cea2, #5f2c82, #df2829);
+    background: linear-gradient(134deg, #0008FF, #3a7bd5, #4ca1af, #43cea2, #5f2c82, #df2829, #0008FF);
 	background-size: 800% 800%;
 
 	-webkit-animation: bg-change 40s ease infinite;
