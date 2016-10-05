@@ -100,7 +100,7 @@ h2{
 
 footer{
 	position: absolute;
-	bottom: 10%;
+	bottom: 7%;
 	transform: translate(-50%, 0%);
     left: 50%;
 	font-family: 'Montserrat', sans-serif;
@@ -122,15 +122,15 @@ footer p{
 
 @media only screen and (max-width: 570px) {
 	.logo .logo-img{
-		top: 36%;
+		top: 33%;
 		height: 146px ;
 		width: 300px ;
-		background: url('../images/logo-white.svg') no-repeat;
+		background: url('../images/logo-white.png') no-repeat;
 		background-size: 300px 146px;
 	}
 
 	h2{
-		top: 49%;
+		top: 52%;
 	    transform: translate(-50%, -50%);
 	    font-size: 18px;
 	}
