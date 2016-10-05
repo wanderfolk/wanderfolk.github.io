@@ -9,6 +9,7 @@ a:visited, a:active{
 }
 
 header {
+	background-image: url('../images/bg-3.jpg');
 	background-repeat: no-repeat;
 	background-position: center center; 
 	background-attachment: fixed;
@@ -29,6 +30,12 @@ header:before{
     -moz-transition: opacity 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition: opacity 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: opacity 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    /*background: -moz-linear-gradient(left, #0008FF 0, #df2829 100%);
+    background: -webkit-gradient(linear, left top, right top, from(0, #0008FF), to(100%, #df2829));
+    background: -webkit-linear-gradient(left, #0008FF 0, #df2829 100%);
+    background: -o-linear-gradient(left, #0008FF 0, #df2829 100%);
+    background: -ms-linear-gradient(left, #0008FF 0, #df2829 100%);
+    background: linear-gradient(to right, #0008FF 0, #df2829 100%);*/
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0008FF', endColorstr='#df2829', GradientType=1);
     bottom: 0;
     content: '';
@@ -36,9 +43,8 @@ header:before{
     position: absolute;
     right: 0;
     top: 0;
-    background: linear-gradient(134deg, #0008FF, #3a7bd5, #4ca1af, #43cea2, #5f2c82, #df2829, #0008FF);
+    background: linear-gradient(134deg, #0008FF, #3a7bd5, #4ca1af, #df2829, #0008FF);
 	background-size: 800% 800%;
-
 	-webkit-animation: bg-change 40s ease infinite;
 	-moz-animation: bg-change 40s ease infinite;
 	animation: bg-change 40s ease infinite;
@@ -73,12 +79,12 @@ img{
     transform: translate(-50%, -50%);
     left: 50%;
 	position: absolute;
-	height: 100vh;
-	width: 100vw;
+	height: 258px;
+	width: 484px;
 }
 
 h2{
-	top: 53%;
+	top: 55.5%;
     transform: translate(-50%, -50%);
     left: 50%;
     position: absolute;
@@ -86,6 +92,7 @@ h2{
     letter-spacing: 1px;
     font-weight: 100;
 	color: #FFF;
+	opacity: 0.9;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -109,4 +116,19 @@ footer p{
 	background: #FFF;
 	margin: -4px 7px;
 	display: inline-block;
+}
+
+@media only screen and (max-width: 570px) {
+	.logo img{
+		top: 36%;
+		height: 146px ;
+		width: 300px ;
+	}
+
+	h2{
+		top: 49%;
+	    transform: translate(-50%, -50%);
+	    font-size: 18px;
+	}
+	
 }
