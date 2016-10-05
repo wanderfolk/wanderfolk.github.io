@@ -74,17 +74,19 @@ header:before{
 	opacity: .95;
 }
 
-img{
+.logo-img{
 	top: 36%;
     transform: translate(-50%, -50%);
     left: 50%;
 	position: absolute;
 	height: 258px;
 	width: 484px;
+	background: url('../images/logo-white.svg') no-repeat;
+	border: 0;
 }
 
 h2{
-	top: 55.5%;
+	top: 54%;
     transform: translate(-50%, -50%);
     left: 50%;
     position: absolute;
@@ -119,10 +121,12 @@ footer p{
 }
 
 @media only screen and (max-width: 570px) {
-	.logo img{
+	.logo .logo-img{
 		top: 36%;
 		height: 146px ;
 		width: 300px ;
+		background: url('../images/logo-white.svg') no-repeat;
+		background-size: 300px 146px;
 	}
 
 	h2{

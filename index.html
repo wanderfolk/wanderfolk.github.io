@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>WanderFolk</title>
-  <meta name='robots' content='index,follow'>
-  <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
-  <link rel="stylesheet" href="stylesheets/style.css">
-  <script src="https://use.fontawesome.com/12dd837807.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>WanderFolk</title>
+	<meta name='robots' content='index,follow'>
+	<link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<script src="https://use.fontawesome.com/12dd837807.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<script type="text/javascript">
+		var innerWidth = window.innerWidth;
+		var element = document.getElementById("logo"); 
+		if ( innerWidth < 570) {
+			element.setAttribute("src", "images/logo-white.png"); 
+		}
+		else if (innerWidth > 570) {
+			element.setAttribute("src", "images/logo-white.svg"); 
+		}
+
+	</script>
 </head>
 <body>
 	<section>
 		<header>
 			<div class="logo">
-				<img src="images/logo-white.svg" alt="WanderFolk Logo">
+				<div class="logo-img"></div>
 				<h2>Coming Soon</h2>
 			</div>
 		</header>
